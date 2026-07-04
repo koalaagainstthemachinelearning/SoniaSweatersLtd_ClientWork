@@ -1,0 +1,1089 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.IO.Pipelines</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.PDF.Activities.PDF</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.IO.Pipelines</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1561,19708" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="man_FinSMV" />
+      <Variable x:TypeArguments="x:String" Name="man_TrimSMV" />
+      <Variable x:TypeArguments="x:String" Name="man_LinkSMV" />
+      <Variable x:TypeArguments="x:String" Name="man_KnitSMV" />
+      <Variable x:TypeArguments="x:String" Name="man_TeamMerchant" />
+      <Variable x:TypeArguments="x:String" Name="man_TeamLeader" />
+      <Variable x:TypeArguments="x:String" Name="currentImagePath" />
+      <Variable x:TypeArguments="x:String" Name="out_MonthIndex" />
+      <Variable x:TypeArguments="x:String" Name="out_Year" />
+      <Variable x:TypeArguments="x:String" Name="out_MonthNum" />
+      <Variable x:TypeArguments="x:String" Name="out_Day" />
+      <Variable x:TypeArguments="x:String" Name="jsScript" />
+      <Variable x:TypeArguments="x:String" Name="currentPONo" />
+      <Variable x:TypeArguments="x:String" Name="currentStyleRef" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_CurrentPO" />
+      <Variable x:TypeArguments="s:String[]" Name="uniquePONos" />
+      <Variable x:TypeArguments="s:String[]" Name="uniqueStyleRefs" />
+      <Variable x:TypeArguments="x:String" Name="str_CurrentPOFileName" />
+      <Variable x:TypeArguments="x:String" Name="upass" />
+      <Variable x:TypeArguments="x:String" Name="uname" />
+      <Variable x:TypeArguments="s:String[]" Name="out_Sizes" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Config" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_AllJobs" />
+      <Variable x:TypeArguments="x:String" Name="styleRef" />
+      <Variable x:TypeArguments="x:String" Name="str_Country" />
+      <Variable x:TypeArguments="x:String" Name="str_PoDate" />
+      <Variable x:TypeArguments="x:String" Name="str_ETD" />
+      <Variable x:TypeArguments="x:String" Name="str_PO_No" />
+      <Variable x:TypeArguments="x:String" Name="str_CurrentPO" />
+      <Variable x:TypeArguments="x:String" Name="str_CurrentPOPath" />
+      <Variable x:TypeArguments="s:String[]" Name="arr_blocks" />
+      <Variable x:TypeArguments="s:String[]" Name="pdfFiles_PO2" />
+      <Variable x:TypeArguments="s:String[]" Name="pdfFiles" />
+      <Variable x:TypeArguments="x:String" Name="pdfPath_001" />
+      <Variable x:TypeArguments="x:String" Name="textPO01" />
+      <Variable x:TypeArguments="x:String" Default="E:\Soniagroup\input" Name="folderPath" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="colorIndex" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="orderQty" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="poIndex" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ExcelApplicationScope DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="630,285" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="E:\Soniagroup\input\merchandise_input.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[dt_Config]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="416,83" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+              <ui:ExcelReadRange.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ExcelReadRange.Range>
+            </ui:ExcelReadRange>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="630,275" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter ERP username" TopMost="False">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[uname]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="630,275" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter ERP password" TopMost="False">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[upass]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <Assign sap:VirtualizedContainerService.HintSize="630,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[pdfFiles]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(folderPath, "*.pdf")]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="630,175" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[pdfPath_001]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[(From f In pdfFiles Where Path.GetFileNameWithoutExtension(f).ToUpper().EndsWith("PO_01") Select f).FirstOrDefault()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="630,175" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[pdfFiles_PO2]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[(From f In pdfFiles Where Path.GetFileNameWithoutExtension(f).ToUpper().EndsWith("PO_02") OrElse Path.GetFileNameWithoutExtension(f).ToUpper().EndsWith("PO_2") Select f).ToArray()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" ResourceFile="{x:Null}" DisplayName="Read PDF Text" FileName="[pdfPath_001]" sap:VirtualizedContainerService.HintSize="630,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[textPO01]">
+      <ui:ReadPDFText.Item>
+        <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[pdfPath_001]" />
+      </ui:ReadPDFText.Item>
+    </ui:ReadPDFText>
+    <Assign sap:VirtualizedContainerService.HintSize="630,175" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[arr_blocks]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[Regex.Split(textPO01, "Page\s+\d+\s+sur\s+\d+")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:BuildDataTable DataTable="[dt_AllJobs]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="630,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;PO_No&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Style_Ref&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Color&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Unit_Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Total_Qty&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Qty_36&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Qty_38_40&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Qty_42_44&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Qty_46_48&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ETD&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;PO_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Delivery_Country&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each str_CurrentPOPath" sap:VirtualizedContainerService.HintSize="630,678" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[pdfFiles_PO2]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="str_CurrentPOPath" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,547" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[str_CurrentPOFileName]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Path.GetFileNameWithoutExtension(str_CurrentPOPath)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ReadPDFText PreserveFormatting="{x:Null}" ResourceFile="{x:Null}" DisplayName="Read PDF Text" FileName="[str_CurrentPOPath]" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_2" Range="All" Text="[str_CurrentPO]">
+              <ui:ReadPDFText.Item>
+                <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[str_CurrentPOPath]" />
+              </ui:ReadPDFText.Item>
+            </ui:ReadPDFText>
+            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Try&#xA;    ' ── Header extraction ──────────────────────────────────&#xA;    out_PO_No   = Regex.Match(in_POText, &quot;Order\s+n[°o]\s*:\s*(\d+)&quot;).Groups(1).Value.Trim&#xA;    out_PODate  = Regex.Match(in_POText, &quot;Date\s+(\d{2}/\d{2}/\d{4})&quot;).Groups(1).Value.Trim&#xA;    out_ETD     = Regex.Match(in_POText, &quot;ETD\s*:\s*Expected\s+(\d{2}/\d{2}/\d{4})&quot;).Groups(1).Value.Trim&#xA;    out_Country = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(&#xA;                    Regex.Match(in_POText, &quot;[A-Z]+,([A-Z]+)(?:&quot; &amp; Chr(13) &amp; &quot;?&quot; &amp; Chr(10) &amp; &quot;)&quot;).Groups(1).Value.Trim.ToLower())&#xA;&#xA;    Console.WriteLine(&quot;PO_No: &quot; &amp; out_PO_No)&#xA;    Console.WriteLine(&quot;PODate: &quot; &amp; out_PODate)&#xA;    Console.WriteLine(&quot;ETD: &quot; &amp; out_ETD)&#xA;    Console.WriteLine(&quot;Country: &quot; &amp; out_Country)&#xA;&#xA;    ' ── Item + Price extraction ─────────────────────────────&#xA;    Dim itemMatches As MatchCollection = Regex.Matches(in_POText,&#xA;    &quot;([A-Z][A-Z\-\.]+\d+)\r?\n\d{7}\r?\n(?:PULL|CARDIGAN) FEMME[^\r\n]*\r?\n&quot; &amp;&#xA;    &quot;Colori\s*=\s*([A-Z][A-Z\s]*?)\s+Tailles&quot;,&#xA;    RegexOptions.Multiline)&#xA;&#xA;    Dim priceMatches As MatchCollection = Regex.Matches(in_POText,&#xA;        &quot;\$US\s*([\d]+[,\.][\d]+)\s*/\s*Unit[eé]\s+(\d+)&quot;,&#xA;        RegexOptions.Multiline)&#xA;&#xA;    Console.WriteLine(&quot;Items found: &quot; &amp; itemMatches.Count.ToString)&#xA;    Console.WriteLine(&quot;Prices found: &quot; &amp; priceMatches.Count.ToString)&#xA;&#xA;    If itemMatches.Count = 0 Then&#xA;        Throw New Exception(&quot;No items found in: &quot; &amp; in_FileName)&#xA;    End If&#xA;&#xA;    If itemMatches.Count &lt;&gt; priceMatches.Count Then&#xA;        Throw New Exception(&quot;Item/price mismatch: &quot; &amp; itemMatches.Count.ToString &amp;&#xA;                            &quot; items vs &quot; &amp; priceMatches.Count.ToString &amp;&#xA;                            &quot; prices in: &quot; &amp; in_FileName)&#xA;    End If&#xA;&#xA;    ' ── StyleRef from first item ────────────────────────────&#xA;    out_StyleRef = itemMatches(0).Groups(1).Value.Trim&#xA;    Console.WriteLine(&quot;StyleRef: &quot; &amp; out_StyleRef)&#xA;&#xA;    ' ── Build rows ──────────────────────────────────────────&#xA;    For i As Integer = 0 To itemMatches.Count - 1&#xA;        Dim styleRef As String  = itemMatches(i).Groups(1).Value.Trim&#xA;        Dim color    As String  = itemMatches(i).Groups(2).Value.Trim&#xA;        Dim price    As String  = priceMatches(i).Groups(1).Value.Trim.Replace(&quot;,&quot;, &quot;.&quot;)&#xA;        Dim totalQty As Integer = CInt(priceMatches(i).Groups(2).Value.Trim)&#xA;&#xA;        Console.WriteLine(&quot;Row &quot; &amp; i.ToString &amp; &quot;: &quot; &amp; styleRef &amp; &quot; | &quot; &amp; color &amp; &quot; | &quot; &amp; price &amp; &quot; | &quot; &amp; totalQty.ToString)&#xA;&#x9;&#x9;Console.WriteLine(&quot;File: &quot; &amp; in_FileName &amp; &quot; | Items: &quot; &amp; itemMatches.Count.ToString)&#xA;&#xA;        ' ── Ratio lookup from PO_01 blocks ──────────────────&#xA;        Dim qty36   As Integer = 0&#xA;        Dim qty3840 As Integer = 0&#xA;        Dim qty4244 As Integer = 0&#xA;        Dim qty4648 As Integer = 0&#xA;&#xA;        For Each blk As String In in_blocks&#xA;            If blk.Contains(styleRef) AndAlso blk.Contains(color) Then&#xA;                Dim ratioMatch As Match = Regex.Match(blk,&#xA;                    Regex.Escape(color) &amp; &quot;\s+(\d{1,2})\s+(\d{1,2})\s+(\d{1,2})\s+(\d{1,2})&quot;)&#xA;                If ratioMatch.Success Then&#xA;                    Dim r1 As Integer = CInt(ratioMatch.Groups(1).Value)&#xA;                    Dim r2 As Integer = CInt(ratioMatch.Groups(2).Value)&#xA;                    Dim r3 As Integer = CInt(ratioMatch.Groups(3).Value)&#xA;                    Dim r4 As Integer = CInt(ratioMatch.Groups(4).Value)&#xA;                    Dim rTotal As Integer = r1 + r2 + r3 + r4&#xA;                    qty36   = CInt(Math.Round(CDbl(totalQty) / rTotal * r1))&#xA;                    qty3840 = CInt(Math.Round(CDbl(totalQty) / rTotal * r2))&#xA;                    qty4244 = CInt(Math.Round(CDbl(totalQty) / rTotal * r3))&#xA;                    qty4648 = CInt(Math.Round(CDbl(totalQty) / rTotal * r4))&#xA;                    Console.WriteLine(&quot;Ratio found: &quot; &amp; qty36.ToString &amp; &quot;/&quot; &amp; qty3840.ToString &amp; &quot;/&quot; &amp; qty4244.ToString &amp; &quot;/&quot; &amp; qty4648.ToString)&#xA;                    Exit For&#xA;                End If&#xA;            End If&#xA;        Next&#xA;&#xA;        If qty36 = 0 AndAlso qty3840 = 0 Then&#xA;            Console.WriteLine(&quot;WARNING: Ratio not found for &quot; &amp; styleRef &amp; &quot; | &quot; &amp; color)&#xA;        End If&#xA;&#xA;        ' ── Append row to dt_AllJobs ─────────────────────────&#xA;        Console.WriteLine(&quot;Adding row to dt...&quot;)&#xA;        Dim newRow As DataRow = out_dt.NewRow()&#xA;        newRow(&quot;PO_No&quot;)            = out_PO_No&#xA;        newRow(&quot;Style_Ref&quot;)        = styleRef&#xA;        newRow(&quot;Color&quot;)            = color&#xA;        newRow(&quot;Unit_Price&quot;)       = price&#xA;        newRow(&quot;Total_Qty&quot;)        = totalQty.ToString&#xA;        newRow(&quot;Qty_36&quot;)           = qty36.ToString&#xA;        newRow(&quot;Qty_38_40&quot;)        = qty3840.ToString&#xA;        newRow(&quot;Qty_42_44&quot;)        = qty4244.ToString&#xA;        newRow(&quot;Qty_46_48&quot;)        = qty4648.ToString&#xA;        newRow(&quot;ETD&quot;)              = out_ETD&#xA;        newRow(&quot;PO_Date&quot;)          = out_PODate&#xA;        newRow(&quot;Delivery_Country&quot;) = out_Country&#xA;        out_dt.Rows.Add(newRow)&#xA;        Console.WriteLine(&quot;Row added successfully&quot;)&#xA;    Next&#xA;&#xA;Catch ex As Exception&#xA;    Dim fullError As String = &quot;Message: &quot; &amp; ex.Message&#xA;    If ex.InnerException IsNot Nothing Then&#xA;        fullError = fullError &amp; &quot; | Inner: &quot; &amp; ex.InnerException.Message&#xA;    End If&#xA;    If ex.InnerException IsNot Nothing AndAlso ex.InnerException.InnerException IsNot Nothing Then&#xA;        fullError = fullError &amp; &quot; | Inner2: &quot; &amp; ex.InnerException.InnerException.Message&#xA;    End If&#xA;    Console.WriteLine(&quot;EXCEPTION: &quot; &amp; fullError)&#xA;    Throw New Exception(fullError)&#xA;End Try" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,188" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+              <ui:InvokeCode.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_POText">[str_CurrentPO]</InArgument>
+                <InArgument x:TypeArguments="s:String[]" x:Key="in_blocks">[arr_blocks]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_FileName">[str_CurrentPOFileName]</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_PO_No">[str_PO_No]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_ETD">[str_ETD]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_PODate">[str_PoDate]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_Country">[str_Country]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_StyleRef">[styleRef]</OutArgument>
+                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt">[dt_AllJobs]</InOutArgument>
+              </ui:InvokeCode.Arguments>
+            </ui:InvokeCode>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <ui:ExcelApplicationScope DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="630,313" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="E:\Soniagroup\output\audit.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_AllJobs]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Audit" StartingCell="A1" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Firefox Logic ERP Solution" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="630,16943" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="628,16749" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'User Name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Text="[uname]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/login.php" ContentHash="lH5nCeeQpECwNoCMy9ovzA" DesignTimeRectangle="1447, 269, 237, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txt_userid' tag='INPUT' type='text' class='user_name' placeholder='User Name' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f565b795-7b36-4f9e-a1a5-c5b32b65e865" InformativeScreenshot="5f49d2bf1680e3d0b74e37c9a02e2fcf.jpg" IsResponsive="True" Reference="f8RoroUDQEWNlvWuMJF0SQ/k_voDevp1E2TrF9LxDPDFQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Logic ERP Solution' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1350, 270, 92, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='lable' aaname='User Name' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='User Name' /&gt;" Guid="54ee82d0-3927-4819-bae6-7db8ef9798a2" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Text="[upass]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/login.php" ContentHash="h4XwB4ywVEmJxGTcFAJBiA" DesignTimeRectangle="1447, 329, 237, 40" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txt_password' tag='INPUT' type='password' class='password' placeholder='Password' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8a415c65-b826-4248-99e0-c809abdcf6d0" InformativeScreenshot="eb538cc203c42ae0c140e265bd6931fb.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/dABZ7p3g8kSMjz0p-IgTWg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Logic ERP Solution' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1357, 330, 85, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Password ' tag='LABEL' type='' class='lable' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Password' /&gt;" Guid="b451e1f7-b03c-4aa6-93d4-c8aab4c8d093" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/login.php" ContentHash="-p9i0JK_cE-y5soYOVPU9Q" DesignTimeRectangle="1449, 394, 100, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit' tag='INPUT' /&gt;" Guid="ba7cb554-63ce-43cf-b6d8-4eb03dc1e42e" InformativeScreenshot="fdda11b316f0fe78581589dc01f70fc0.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/ow6fLce-YEaEGyjMRVeo6Q" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Logic ERP Solution' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Merchandising'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="fm9ABmzH3UKgOLYnM6BqNw" DesignTimeRectangle="324, 153, 106, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Merchandising' tableRow='3' tag='A' /&gt;" Guid="0cd0d33b-141a-442e-920f-69b53f6d2605" InformativeScreenshot="b16c4649bb2765bfa747ed8c59af12e3.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/vf70_Ov38kuhxZ8INNUzTQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Logic ERP Solution' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '+Sweater Garments'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="KplSGveo5UW3fL6VUYBrfA" DesignTimeRectangle="13, 196, 88, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='SPAN' /&gt;" Guid="4f7df9c7-dd65-4173-9f27-144c4a6115a2" InformativeScreenshot="f368129f7889369a7950096af7dd0670.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/-ecF_7uGRkKBEpWBgF8Jdw" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Merchandising' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '+Order Tracking'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,194" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="O8Ed4ywKwEy1hVFIPG76_A" DesignTimeRectangle="18, 217, 71, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='+Order Tracking' tableRow='4' tag='SPAN' /&gt;" Guid="9520a873-5b33-4ca0-a9a4-2a0522c2eef8" InformativeScreenshot="5f23fdeaea63d82d903f30e17a374378.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/XjywJfNHZUOOKBbg7rhmSA" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Merchandising' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:InvokeCode ContinueOnError="{x:Null}" Code="uniqueStyleRefs = in_dt.AsEnumerable().Select(Function(row) row(&quot;Style_Ref&quot;).ToString()).Distinct().ToArray()" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="594,197" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+              <ui:InvokeCode.Arguments>
+                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt">[dt_AllJobs]</InArgument>
+                <OutArgument x:TypeArguments="s:String[]" x:Key="uniqueStyleRefs">[uniqueStyleRefs]</OutArgument>
+              </ui:InvokeCode.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InvokeCode>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentStyleRef" sap:VirtualizedContainerService.HintSize="594,15224" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[uniqueStyleRefs]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentStyleRef" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,15102" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Order Entry by Matrix'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,194" sap2010:WorkflowViewState.IdRef="NClick_34" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="JkOsoBK4mESqFgRQrwlDHQ" DesignTimeRectangle="23, 259, 96, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='lid1199' tableRow='4' tag='A' /&gt;" Guid="cf8e898b-837b-48f7-b277-3b0794d06b52" InformativeScreenshot="956f4e1a827eb79a4f5db2bddaee543e.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/WLaf6gZ47UWQdkWTT9NIsw" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Merchandising' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Assign sap:VirtualizedContainerService.HintSize="558,175" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[poIndex]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:InvokeCode ContinueOnError="{x:Null}" Code="uniquePONos = in_dt.AsEnumerable().Where(Function(row) row(&quot;Style_Ref&quot;).ToString() = currentStyleRef).Select(Function(row) row(&quot;PO_No&quot;).ToString()).Distinct().ToArray()" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="558,197" sap2010:WorkflowViewState.IdRef="InvokeCode_4">
+                      <ui:InvokeCode.Arguments>
+                        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt">[dt_AllJobs]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="currentStyleRef">[currentStyleRef]</InArgument>
+                        <OutArgument x:TypeArguments="s:String[]" x:Key="uniquePONos">[uniquePONos]</OutArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="Argument2" />
+                      </ui:InvokeCode.Arguments>
+                    </ui:InvokeCode>
+                    <uix:NSelectItem DisplayName="Select Item 'Sonia and Sweaters Ltd.'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Sonia and Sweaters Ltd." ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="3">
+                          <x:String>-- Select Company --</x:String>
+                          <x:String>Sonia Fine Knit Ltd.</x:String>
+                          <x:String>Sonia and Sweaters Ltd.</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="81JpKGIf2kKl_HHX05_4dA" DesignTimeRectangle="334, 275, 130, 20" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cbo_company_name' tableRow='2' tag='SELECT' /&gt;" Guid="0b4fa7fd-993b-4198-af7d-484dcfce9f1d" InformativeScreenshot="a6546120af98ebb00930e53a2d9f7f07.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/tJOM7JGTMkO2LLESugvnDg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …'" sap:VirtualizedContainerService.HintSize="558,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var sel=doc.getElementById('cbo_buyer_name');for(var i=0;i&lt;sel.options.length;i++){if(sel.options[i].text.trim()==='Systeme U [Cobalt]'){sel.selectedIndex=i;sel.dispatchEvent(new Event('change',{bubbles:true}));break;}}})()" Version="V5">
+                      <uix:NInjectJsScript.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="4aJggzKVKEue5_fyhu3ddA" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="986b0653-2883-4d6f-9048-7d672cf17dab" InformativeScreenshot="49db8c7ffbedf297730d5837e5259579.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/oj81l3WWhEiKyJLSxxD01w" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NInjectJsScript.Target>
+                    </uix:NInjectJsScript>
+                    <uix:NClick ActivateBefore="True" ClickType="[UiPath.UIAutomationNext.Enums.NClickType.Double]" DisplayName="Click 'INPUT txt_style_ref(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,194" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="Oq9kQ6mW2UyefMzuNLFtOQ" DesignTimeRectangle="589, 256, 82, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='txt_style_ref' tableRow='2' tag='INPUT' /&gt;" Guid="7c490389-5d4c-48e5-881a-a8cc2ad1684d" InformativeScreenshot="5d53edda1dfe7d011a393786df627a3f.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/VqAXBYrV6EKey8xeCgVIng" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="558,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[currentStyleRef]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT txt_style(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,194" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="WjgctaOE7kOTHbJuxTwZmg" DesignTimeRectangle="923, 466, 112, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl name='_iframe-EmailBox' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='txt_style' tableRow='3' tag='INPUT' /&gt;" Guid="1dbca0c8-3135-49d1-a329-4aaf84ffdae9" InformativeScreenshot="502c4e32305b1f0042238183eaffd5f2.jpg" Reference="KHsovip5P0y6RY9EZPKXGA/zuCayS8ZoUSXqPQ_phgoTA" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT  txt_style'" sap:VirtualizedContainerService.HintSize="558,187" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="a" KeyModifiers="Ctrl">
+                      <ui:SendHotkey.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="56dabd03-7f13-4c48-8ca8-4d1027148585" InformativeScreenshot="3425b166f6fef94f67cafa08c63d1659" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl name='_iframe-EmailBox' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='txt_style' tableRow='3' tag='INPUT' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SendHotkey.Target>
+                    </ui:SendHotkey>
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT  txt_style'" sap:VirtualizedContainerService.HintSize="558,187" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="v" KeyModifiers="Ctrl">
+                      <ui:SendHotkey.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="56dabd03-7f13-4c48-8ca8-4d1027148585" InformativeScreenshot="3425b166f6fef94f67cafa08c63d1659" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl name='_iframe-EmailBox' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='txt_style' tableRow='3' tag='INPUT' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SendHotkey.Target>
+                    </ui:SendHotkey>
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT  txt_style'" sap:VirtualizedContainerService.HintSize="558,187" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None" SpecialKey="True">
+                      <ui:SendHotkey.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c631c1c2-bcf2-4836-9387-4250ef6e72e8" InformativeScreenshot="91bfbc1a318d604da8ecd7ca4f86f619" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl name='_iframe-EmailBox' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='txt_style' tableRow='3' tag='INPUT' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SendHotkey.Target>
+                    </ui:SendHotkey>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Show'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,194" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="pzVRSquzXUCHZ9Wk40zEUg" DesignTimeRectangle="1277, 466, 100, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl name='_iframe-EmailBox' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' type='button' /&gt;" Guid="3ed9fa51-3caa-4e4d-8319-5eb29920dd1b" InformativeScreenshot="eebef4a6a249706843bf1a23dfdfc7d2.jpg" Reference="KHsovip5P0y6RY9EZPKXGA/gkiHS69tw02_D7Oi62_pUw" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PULL-COBALT-2600[325622…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,194" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="sGIbqBS-MEGqrNlUrCX7jA" DesignTimeRectangle="996, 556, 100, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl name='_iframe-EmailBox' tag='IFRAME' /&gt;&lt;webctrl id='list_view' tag='TABLE' /&gt;&lt;webctrl tableCol='7' tableRow='2' tag='P' /&gt;" Guid="63ab0ccc-bad2-4ccf-afa5-d8d540b00236" InformativeScreenshot="5c6a75d50f591610100fb526eb8e7f65.jpg" Reference="KHsovip5P0y6RY9EZPKXGA/P9rPTBQ9ekCP8aj2tf4nMw" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,357" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(1)'" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var sel=doc.getElementById('cbo_team_leader');for(var i=0;i&lt;sel.options.length;i++){if(sel.options[i].text.trim()==='&quot; &amp; dt_Config.Rows(0)(&quot;Team Leader&quot;).ToString.Trim &amp; &quot;'){sel.selectedIndex=i;sel.dispatchEvent(new Event('change',{bubbles:true}));break;}}})();&quot;]" Version="V5">
+                            <uix:NInjectJsScript.Target>
+                              <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="kfv7NOEzskS-Ii0te9OMPg" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="fe7ad218-1697-4d94-9d38-5a0595a62f29" InformativeScreenshot="4a21b47e5076a6fa8b68d451d8e10656.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/nf5Gec-v7UazBtLzVOvh8Q" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                            </uix:NInjectJsScript.Target>
+                          </uix:NInjectJsScript>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,357" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(2)'" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NInjectJsScript_3" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var sel=doc.getElementById('cbo_dealing_merchant');for(var i=0;i&lt;sel.options.length;i++){if(sel.options[i].text.trim()==='&quot; &amp; dt_Config.Rows(0)(&quot;Team Merchant&quot;).ToString.Trim &amp; &quot;'){sel.selectedIndex=i;sel.dispatchEvent(new Event('change',{bubbles:true}));break;}}})();&quot;]" Version="V5">
+                            <uix:NInjectJsScript.Target>
+                              <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="c0biOjtpm0iwmNAZJvz36w" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="adf2ef0f-877f-4c3d-8675-8421b3c3d722" InformativeScreenshot="4a21b47e5076a6fa8b68d451d8e10656.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/1VPPS9uX5EuNWU6bgBWY2A" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                            </uix:NInjectJsScript.Target>
+                          </uix:NInjectJsScript>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="558,123" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Please fill in the following fields manually in the ERP:&#xD;&#xA;&#xD;&#xA;1. Team Leader&#xD;&#xA;2. Dealing Merchant&#xD;&#xA;3. Knit SMV&#xD;&#xA;4. Link SMV&#xD;&#xA;5. Trim SMV&#xD;&#xA;6. Fin SMV&#xD;&#xA;7. Yarn Quality&#xD;&#xA;&#xD;&#xA;Click OK when done.&quot;]" />
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,357" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(3)'" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NInjectJsScript_4" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var el=doc.getElementById('smv_1');el.value='&quot; &amp; dt_Config.Rows(0)(&quot;Knit_SMV&quot;).ToString &amp; &quot;';el.dispatchEvent(new Event('change',{bubbles:true}));})();&quot;]" Version="V5">
+                            <uix:NInjectJsScript.Target>
+                              <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="JOM-WGcqS0yKZV4ESvE4Fw" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="3debe347-52c6-421c-ba21-0e5ed8fb2794" InformativeScreenshot="81c3ab0e4bd1f88536de7f2aab65822f.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/AJCDjO6iAEKca3p-TYZcUw" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                            </uix:NInjectJsScript.Target>
+                          </uix:NInjectJsScript>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,357" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(4)'" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NInjectJsScript_5" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var el=doc.getElementById('cutsmv_1');el.value='&quot; &amp; dt_Config.Rows(0)(&quot;Link_SMV&quot;).ToString &amp; &quot;';el.dispatchEvent(new Event('change',{bubbles:true}));})();&quot;]" Version="V5">
+                            <uix:NInjectJsScript.Target>
+                              <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="TGrNB96qjEOIS8MlXVublA" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="9cde74be-119d-44c5-a772-5b21f9d4e91f" InformativeScreenshot="81c3ab0e4bd1f88536de7f2aab65822f.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/yd11YmefNEiQ7uHf_7dX2Q" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                            </uix:NInjectJsScript.Target>
+                          </uix:NInjectJsScript>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,357" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(5)'" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NInjectJsScript_6" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var el=doc.getElementById('trimsmv_1');el.value='&quot; &amp; dt_Config.Rows(0)(&quot;Trim_SMV&quot;).ToString &amp; &quot;';el.dispatchEvent(new Event('change',{bubbles:true}));})();&quot;]" Version="V5">
+                            <uix:NInjectJsScript.Target>
+                              <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="kwMWQVPpxEO75YiI-2Iz0A" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="d7ef0b89-c4dd-4ec1-ac36-e50f07851304" InformativeScreenshot="81c3ab0e4bd1f88536de7f2aab65822f.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/G88SuoiBW0uSO48rkQMeFg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                            </uix:NInjectJsScript.Target>
+                          </uix:NInjectJsScript>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,357" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(6)'" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NInjectJsScript_7" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var el=doc.getElementById('finsmv_1');el.value='&quot; &amp; dt_Config.Rows(0)(&quot;Fin_SMV&quot;).ToString &amp; &quot;';el.dispatchEvent(new Event('change',{bubbles:true}));})();&quot;]" Version="V5">
+                            <uix:NInjectJsScript.Target>
+                              <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="JZi5EmX1Q02w4fAB79Pjmw" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="fbbb7192-0b5e-4bb5-962f-950834dc0cd3" InformativeScreenshot="5cbe6f78fc31967df4219eed42facece.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/ZRDwJ9MFQUCJ0kp2e75fWQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                            </uix:NInjectJsScript.Target>
+                          </uix:NInjectJsScript>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,357" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(7)'" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NInjectJsScript_8" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var el=doc.getElementById('txt_yarn_quality');el.value='&quot; &amp; dt_Config.Rows(0)(&quot;Yarn Quality&quot;).ToString &amp; &quot;';el.dispatchEvent(new Event('change',{bubbles:true}));})();&quot;]" Version="V5">
+                            <uix:NInjectJsScript.Target>
+                              <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="E-q8RuE5dEik8LcynACvAQ" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="84c50bc8-0192-4a8d-8898-2d22aebf4a13" InformativeScreenshot="81c3ab0e4bd1f88536de7f2aab65822f.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/CS3LaGjb7EqeGnnu_eD5hw" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                            </uix:NInjectJsScript.Target>
+                          </uix:NInjectJsScript>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(8)'" sap:VirtualizedContainerService.HintSize="558,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_9" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var sel=doc.getElementById('cbo_product_department');for(var i=0;i&lt;sel.options.length;i++){if(sel.options[i].text.trim()==='&quot; &amp; dt_Config.Rows(0)(&quot;Prod. Dept&quot;).ToString.Trim &amp; &quot;'){sel.selectedIndex=i;sel.dispatchEvent(new Event('change',{bubbles:true}));break;}}})();&quot;]" Version="V5">
+                      <uix:NInjectJsScript.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="UdG7fuSlG0K_yGa11kgZRQ" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="712e59d1-3e1b-4b5b-85ae-1586959914f5" InformativeScreenshot="ef47d154e3bab7bd0634a9f1d99ee5a1.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/sYjTvTy1vk2zbPekA0w6eg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NInjectJsScript.Target>
+                    </uix:NInjectJsScript>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,194" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="LVumyIVH1kqiihmMf7NxNQ" DesignTimeRectangle="547, 576, 80, 22" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='save1' tableRow='16' tag='INPUT' /&gt;" Guid="080efc41-f5d5-4701-9723-039842cc7ad4" InformativeScreenshot="1b5395b42a7e74a27631f18470a15502.jpg" Reference="KHsovip5P0y6RY9EZPKXGA/O_GQIQqK9EuuYNLEEWlcLg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClosePopup PopupException="{x:Null}" PopupHandled="{x:Null}" DisplayName="Close Popup" sap:VirtualizedContainerService.HintSize="558,170" sap2010:WorkflowViewState.IdRef="NClosePopup_1" PreferredButtons="[New String(){&quot;OK&quot;}]" Version="V5" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ADDVIEW IMAGE'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,194" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="NucT1T_hQE--miGRbF59CQ" DesignTimeRectangle="334, 589, 140, 18" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='14' tag='INPUT' /&gt;" Guid="5931125d-9db8-472f-ace3-de9f7808e920" InformativeScreenshot="ec12ab1b77045b68ea3e8385f8446004.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/pi61FuS-ykmceMnzko3vhw" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="[UiPath.UIAutomationNext.Enums.NClickType.Single]" DisplayName="Click 'Browse files'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,194" sap2010:WorkflowViewState.IdRef="NClick_36" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="39x36PHbuUScdNDDMxv_xw" DesignTimeRectangle="571, 362, 76, 22" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&#xA;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&#xA;&lt;webctrl name='_iframe-EmailBox' tag='IFRAME' /&gt;&#xA;&lt;webctrl id='fileSelect' tag='BUTTON' /&gt;" Guid="ad351222-f109-4539-a289-f35df0e8a95d" InformativeScreenshot="13a53c439f65c858afbab5fe7a11dbd0.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/5d-6ODF3ok6QY2X3lR_fxA" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Assign sap:VirtualizedContainerService.HintSize="558,175" sap2010:WorkflowViewState.IdRef="Assign_14">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[currentImagePath]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[{".jpg", ".jpeg", ".png"}.Select(Function(ext) Path.Combine(folderPath, "images", currentStyleRef &amp; ext)).FirstOrDefault(Function(p) File.Exists(p))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="558,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_3" Text="[currentImagePath]" />
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="558,123" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Edit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,194" sap2010:WorkflowViewState.IdRef="NClick_37" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="htNTiSrg0Ue3C6gj9UWMEg" DesignTimeRectangle="201, 470, 514, 15" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="309e78e8-9398-4246-94b5-3f0e6cf78a93" InformativeScreenshot="c81b0bb3e26b61d4c8ec0ef95caba663.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/9DRaUoLQIkCesOTkQZuEnA" ScopeSelectorArgument="&lt;wnd app='firefox.exe' cls='#32770' title='File Upload' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'ComboBox'" sap:VirtualizedContainerService.HintSize="558,187" sap2010:WorkflowViewState.IdRef="SendHotkey_9" Key="v" KeyModifiers="Ctrl">
+                      <ui:SendHotkey.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c463a5ca-70d5-4085-a464-9a3bffc8e0ea" InformativeScreenshot="92ffb5c897b96d1373bca9427f18df78" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='File Upload' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SendHotkey.Target>
+                    </ui:SendHotkey>
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'ComboBox'" sap:VirtualizedContainerService.HintSize="558,187" sap2010:WorkflowViewState.IdRef="SendHotkey_10" Key="enter" KeyModifiers="None" SpecialKey="True">
+                      <ui:SendHotkey.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bf23cd32-b1fc-4a40-a4aa-5e90ba345b03" InformativeScreenshot="92ffb5c897b96d1373bca9427f18df78" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='File Upload' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SendHotkey.Target>
+                    </ui:SendHotkey>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,194" sap2010:WorkflowViewState.IdRef="NClick_38" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="cK7MsDlXm0iIZoVLq7vlxA" DesignTimeRectangle="907, 312, 16, 16" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl aaname='Close' tag='IMG' /&gt;" Guid="4aff4a9e-79a0-4d7c-907a-cd1c6b9f3fd7" InformativeScreenshot="dd801d17f1fe97372ea7d6a7e7d54ecd.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/TCGEdsOUT0iMls-iboiphQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="558,123" sap2010:WorkflowViewState.IdRef="Delay_10" />
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentPONo" sap:VirtualizedContainerService.HintSize="558,7813" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[uniquePONos]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="x:String">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:String" Name="currentPONo" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="556,7691" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:Int32" Default="0" Name="matrixRow" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If Condition="[poIndex&gt;0]" sap:VirtualizedContainerService.HintSize="522,792" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,563" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '⟳ Refresh(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_33" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="tG0NwgR2iECH-SXfX85-ZA" DesignTimeRectangle="989, 944, 80, 21" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&#xA;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&#xA;&lt;webctrl id='Refresh2' tag='INPUT' /&gt;" Guid="4611b9dc-adc1-482a-9159-d3e959aa36e7" InformativeScreenshot="d0ae3ff50637d2d3e48230cae620cfc4.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/Do4JHl14_UOH3ClTTP5ZUQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                                  <uix:NSelectItem DisplayName="Select Item '--Select Item--'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="1/4 ZipTroyer neck sweater" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                                    <uix:NSelectItem.Items>
+                                      <scg:List x:TypeArguments="x:String" Capacity="5">
+                                        <x:String>--Select Item--</x:String>
+                                        <x:String>1/4 ZipTroyer neck sweater</x:String>
+                                        <x:String>Half Zip Sweater Mock Neck</x:String>
+                                        <x:String>Hooded Hybrid</x:String>
+                                        <x:String>Leggings</x:String>
+                                      </scg:List>
+                                    </uix:NSelectItem.Items>
+                                    <uix:NSelectItem.Target>
+                                      <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="YunqSrzLW0uOuh2QxR5n9Q" DesignTimeRectangle="244, 853, 120, 20" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl parentid='orderentry_2' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cbo_gmtsItem_id' tableRow='2' tag='SELECT' /&gt;" Guid="9091ada4-6ef3-4265-8479-cff1554f936e" InformativeScreenshot="4d15981a2d0ace0f79efaa62a946ecfb.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/jwA1k1AvvkSIZKRzlCgXKg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                    </uix:NSelectItem.Target>
+                                  </uix:NSelectItem>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim filteredRows As IEnumerable(Of DataRow) = in_dt.AsEnumerable().Where(Function(row) row(&quot;Style_Ref&quot;).ToString() = in_styleRef AndAlso row(&quot;PO_No&quot;).ToString() = in_poNo)&#xA;&#xA;If filteredRows.Any() Then&#xA;    out_dt = filteredRows.CopyToDataTable()&#xA;    out_orderQty = filteredRows.Sum(Function(row) Convert.ToInt32(row(&quot;Total_Qty&quot;)))&#xA;Else&#xA;    out_dt = in_dt.Clone()&#xA;    out_orderQty = 0&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="522,197" sap2010:WorkflowViewState.IdRef="InvokeCode_5">
+                              <ui:InvokeCode.Arguments>
+                                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt">[dt_AllJobs]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_styleRef">[currentStyleRef]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_poNo">[currentPONo]</InArgument>
+                                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt">[dt_CurrentPO]</OutArgument>
+                                <OutArgument x:TypeArguments="x:Int32" x:Key="out_orderQty">[orderQty]</OutArgument>
+                              </ui:InvokeCode.Arguments>
+                            </ui:InvokeCode>
+                            <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(9)'" sap:VirtualizedContainerService.HintSize="522,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_10" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var el=doc.getElementById('txt_quantity');el.value='&quot; &amp; orderQty.ToString() &amp; &quot;';el.dispatchEvent(new Event('change',{bubbles:true}));})();&quot;]" Version="V5">
+                              <uix:NInjectJsScript.Target>
+                                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="d5o1FMpegEqaMyO5a8Bm4A" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="38a37b22-16bf-4236-bb15-b71e8e1a7964" InformativeScreenshot="648bf1ea7ced3646a804deed6bff4539.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/WUdLS-pTYUqgjX5NwJ0bRg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NInjectJsScript.Target>
+                            </uix:NInjectJsScript>
+                            <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(10)'" sap:VirtualizedContainerService.HintSize="522,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_11" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var el=doc.getElementById('txt_po_no');el.value='&quot; &amp; currentPONo.ToString() &amp; &quot;';el.dispatchEvent(new Event('change',{bubbles:true}));})();&quot;]" Version="V5">
+                              <uix:NInjectJsScript.Target>
+                                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="gJoF8228lkq1VawB6At-_g" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="57beeedb-c443-4f1e-b7b1-edc7849aa8a6" InformativeScreenshot="425daff21bf66d64abb5dd4a0efc2394.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/pEpANzaxF0yrO8xn6hwk_w" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NInjectJsScript.Target>
+                            </uix:NInjectJsScript>
+                            <Assign sap:VirtualizedContainerService.HintSize="522,175" sap2010:WorkflowViewState.IdRef="Assign_9">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[colorIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="522,175" sap2010:WorkflowViewState.IdRef="Assign_10">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="s:String[]">[out_Sizes]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="s:String[]">[New String(){"36", "38/40", "42/44", "46/48"}]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(11)'" sap:VirtualizedContainerService.HintSize="522,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_12" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var inputs=doc.querySelectorAll('input[id^=&quot;txt_size_name&quot;]');var sizes=['36','38/40','42/44','46/48'];for(var i=0;i&lt;inputs.length&amp;&amp;i&lt;sizes.length;i++){inputs[i].value=sizes[i];inputs[i].dispatchEvent(new Event('change',{bubbles:true}));}})();" Version="V5">
+                              <uix:NInjectJsScript.Target>
+                                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="X4E44QlU00aQ98mSLZ4y7w" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="38f970ed-a855-4375-913b-cc28e5354316" InformativeScreenshot="3e03bbc45e614d8a612f126ac32251da.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/wJg9S_Yp6U6O-L8tKcQdHg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NInjectJsScript.Target>
+                            </uix:NInjectJsScript>
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_CurrentPO]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="522,3374" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                              <ui:ForEachRow.Body>
+                                <ActivityAction x:TypeArguments="sd:DataRow">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="currentColorRow" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,3192" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(12)'" sap:VirtualizedContainerService.HintSize="486,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_13" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var btn=doc.getElementById('btn_color_&quot; &amp; (colorIndex + 1) &amp; &quot;');if(btn){btn.click();btn.click();}})();&quot;]" Version="V5">
+                                      <uix:NInjectJsScript.Target>
+                                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="SNEebE-qpUut7Ez7422XmQ" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="675e1137-628b-47e8-aa36-fd521c02c35f" InformativeScreenshot="37e1adc0c4019ca982dafdf80f71071e.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/xKi9kYst8U60UiODUOPBgg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NInjectJsScript.Target>
+                                    </uix:NInjectJsScript>
+                                    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim parts() As String = in_DateString.Split(&quot;/&quot;c)&#xA;out_Day        = parts(0)&#xA;out_MonthNum   = parts(1)&#xA;out_MonthIndex = (CInt(parts(1)) - 1).ToString&#xA;out_Year       = parts(2)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="486,197" sap2010:WorkflowViewState.IdRef="InvokeCode_8">
+                                      <ui:InvokeCode.Arguments>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_DateString">[dt_CurrentPO.Rows(0)("PO_Date").ToString]</InArgument>
+                                        <OutArgument x:TypeArguments="x:String" x:Key="out_Day">[out_Day]</OutArgument>
+                                        <OutArgument x:TypeArguments="x:String" x:Key="out_MonthNum">[out_MonthNum]</OutArgument>
+                                        <OutArgument x:TypeArguments="x:String" x:Key="out_Year">[out_Year]</OutArgument>
+                                        <OutArgument x:TypeArguments="x:String" x:Key="out_MonthIndex">[out_MonthIndex]</OutArgument>
+                                      </ui:InvokeCode.Arguments>
+                                    </ui:InvokeCode>
+                                    <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(2)'" sap:VirtualizedContainerService.HintSize="486,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_19" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var el=doc.getElementById('txt_po_received_date');el.removeAttribute('readonly');el.value='&quot; &amp; out_Day &amp; &quot;-&quot; &amp; out_MonthNum &amp; &quot;-&quot; &amp; out_Year &amp; &quot;';el.dispatchEvent(new Event('change',{bubbles:true}));})();&quot;]" Version="V5">
+                                      <uix:NInjectJsScript.Target>
+                                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="c0biOjtpm0iwmNAZJvz36w" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="adf2ef0f-877f-4c3d-8675-8421b3c3d722" InformativeScreenshot="4a21b47e5076a6fa8b68d451d8e10656.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/1VPPS9uX5EuNWU6bgBWY2A" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NInjectJsScript.Target>
+                                    </uix:NInjectJsScript>
+                                    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim parts() As String = in_DateString.Split(&quot;/&quot;c)&#xA;out_Day        = parts(0)&#xA;out_MonthNum   = parts(1)&#xA;out_MonthIndex = (CInt(parts(1)) - 1).ToString&#xA;out_Year       = parts(2)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="486,197" sap2010:WorkflowViewState.IdRef="InvokeCode_9">
+                                      <ui:InvokeCode.Arguments>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_DateString">[dt_CurrentPO.Rows(0)("ETD").ToString]</InArgument>
+                                        <OutArgument x:TypeArguments="x:String" x:Key="out_Day">[out_Day]</OutArgument>
+                                        <OutArgument x:TypeArguments="x:String" x:Key="out_MonthNum">[out_MonthNum]</OutArgument>
+                                        <OutArgument x:TypeArguments="x:String" x:Key="out_Year">[out_Year]</OutArgument>
+                                        <OutArgument x:TypeArguments="x:String" x:Key="out_MonthIndex">[out_MonthIndex]</OutArgument>
+                                      </ui:InvokeCode.Arguments>
+                                    </ui:InvokeCode>
+                                    <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(2)'" sap:VirtualizedContainerService.HintSize="486,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_20" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var el=doc.getElementById('txt_pub_shipment_date');el.removeAttribute('readonly');el.value='&quot; &amp; out_Day &amp; &quot;-&quot; &amp; out_MonthNum &amp; &quot;-&quot; &amp; out_Year &amp; &quot;';el.dispatchEvent(new Event('change',{bubbles:true}));})();&quot;]" Version="V5">
+                                      <uix:NInjectJsScript.Target>
+                                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="c0biOjtpm0iwmNAZJvz36w" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="adf2ef0f-877f-4c3d-8675-8421b3c3d722" InformativeScreenshot="4a21b47e5076a6fa8b68d451d8e10656.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/1VPPS9uX5EuNWU6bgBWY2A" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NInjectJsScript.Target>
+                                    </uix:NInjectJsScript>
+                                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="486,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,408" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,297" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT flt1_tbl_list_sea…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Text="[currentColorRow(&quot;Color&quot;).ToString.Trim]" Version="V5">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="NB9Wzp_NM0a_bwe706hrsA" DesignTimeRectangle="991, 418, 159, 18" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl name='_iframe-EmailBox' tag='IFRAME' /&gt;&lt;webctrl id='tbl_list_search' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='1' tag='INPUT' /&gt;" Guid="4ae41d41-caa5-4082-a1f7-4be02e6b370c" InformativeScreenshot="c4a1d80d667d47cf2533f3600be00652.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/kqaDr6av-E-GV4rdN2gMfg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                            </uix:NTypeInto.Target>
+                                            <uix:NTypeInto.VerifyOptions>
+                                              <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                              </uix:VerifyExecutionTypeIntoOptions>
+                                            </uix:NTypeInto.VerifyOptions>
+                                          </uix:NTypeInto>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                    </ui:CommentOut>
+                                    <uix:NSelectItem DisplayName="Select Item 'Select Country'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,195" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="France" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                                      <uix:NSelectItem.Items>
+                                        <scg:List x:TypeArguments="x:String" Capacity="50">
+                                          <x:String>Comoros Islands</x:String>
+                                          <x:String>Congo</x:String>
+                                          <x:String>Cook Islands</x:String>
+                                          <x:String>Costa Rica</x:String>
+                                          <x:String>Croatia</x:String>
+                                          <x:String>Cuba</x:String>
+                                          <x:String>Cyprus</x:String>
+                                          <x:String>Czech Republic</x:String>
+                                          <x:String>Denmark</x:String>
+                                          <x:String>Djibouti</x:String>
+                                          <x:String>Dominica</x:String>
+                                          <x:String>Dominican Republic</x:String>
+                                          <x:String>Easter Island</x:String>
+                                          <x:String>Ecuador</x:String>
+                                          <x:String>Egypt</x:String>
+                                          <x:String>El Salvador</x:String>
+                                          <x:String>England</x:String>
+                                          <x:String>Equatorial Guinea</x:String>
+                                          <x:String>Estonia</x:String>
+                                          <x:String>Ethiopia</x:String>
+                                          <x:String>Faeroe Islands</x:String>
+                                          <x:String>Falkland Islands</x:String>
+                                          <x:String>Fiji</x:String>
+                                          <x:String>Finland</x:String>
+                                          <x:String>France</x:String>
+                                          <x:String>French Guyana</x:String>
+                                          <x:String>French Polynesia</x:String>
+                                          <x:String>Gabon</x:String>
+                                          <x:String>Gambia</x:String>
+                                          <x:String>Georgia Republic</x:String>
+                                          <x:String>Germany</x:String>
+                                          <x:String>Ghana</x:String>
+                                          <x:String>Gibraltar</x:String>
+                                          <x:String>Great Britain/OG</x:String>
+                                          <x:String>Greece</x:String>
+                                          <x:String>Greenland</x:String>
+                                          <x:String>Grenada</x:String>
+                                          <x:String>Guadeloupe (French)</x:String>
+                                          <x:String>Guatemala</x:String>
+                                          <x:String>Guernsey Island</x:String>
+                                          <x:String>Guinea</x:String>
+                                          <x:String>Guinea Bissau</x:String>
+                                          <x:String>Guyana</x:String>
+                                          <x:String>Haiti</x:String>
+                                          <x:String>Heard and McDonald Isls</x:String>
+                                          <x:String>Honduras</x:String>
+                                          <x:String>Hong Kong</x:String>
+                                          <x:String>Hong Kong[Online]</x:String>
+                                          <x:String>Hungary</x:String>
+                                          <x:String>Iceland</x:String>
+                                        </scg:List>
+                                      </uix:NSelectItem.Items>
+                                      <uix:NSelectItem.Target>
+                                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="8YzaAKWffkG6MNrHNNXepA" DesignTimeRectangle="365, 853, 100, 20" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl parentid='orderentry_2' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cbo_deliveryCountry_id' tableRow='2' tag='SELECT' /&gt;" Guid="9521435f-0308-46a5-bb73-1c951f39e285" InformativeScreenshot="d7ffae615038bd3d46fa2c1162aae522.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/zfmc1KQSoUCPmyvd--gtPQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NSelectItem.Target>
+                                    </uix:NSelectItem>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT txt_docSheetQty'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Text="[orderQty.ToString]" Version="V5">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="O1olKdim8E6sNCkfVjp_Iw" DesignTimeRectangle="857, 764, 62, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&#xA;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&#xA;&lt;webctrl id='txt_docSheetQty' tag='INPUT' /&gt;" Guid="36e3f5bb-dfdb-4100-9c52-1b05ea961d8c" InformativeScreenshot="2567442a4f40779bb1cb21571651de8b.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/i9GURrmuAkSAUayAOvuJMg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.VerifyOptions>
+                                        <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        </uix:VerifyExecutionTypeIntoOptions>
+                                      </uix:NTypeInto.VerifyOptions>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="[UiPath.UIAutomationNext.Enums.NClickType.Double]" DisplayName="Click 'INPUT txtColorName_1'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,194" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="pgzFCCWMM0WjSSY90J6BzQ" DesignTimeRectangle="259, 909, 92, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl id='color_tbl' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='txtColorName_&quot; &amp; (colorIndex + 1).ToString &amp; &quot;' tag='INPUT' /&gt;&quot;]" Guid="1050900d-324f-4894-b29f-581ca4b591af" InformativeScreenshot="a675bc977e27edf993f8ae9e5180330c.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/RqPakFBOKEOce2bzl7eztg" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT  flt1_tbl_list_se...'" sap:VirtualizedContainerService.HintSize="486,187" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                      <ui:SendHotkey.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7aa4dc5a-f690-49b5-a840-e2693199b49d" InformativeScreenshot="ae9e77a7991636b9f6f5a7adde470dae" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl name='_iframe-EmailBox' tag='IFRAME' /&gt;&lt;webctrl id='tbl_list_search' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='1' tag='INPUT' /&gt;">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:SendHotkey.Target>
+                                    </ui:SendHotkey>
+                                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="486,123" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DTM [PREVIOUS] TBC'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,194" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="f20byecMBkied0YWRRKXgg" DesignTimeRectangle="991, 438, 158, 16" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl name='_iframe-EmailBox' tag='IFRAME' /&gt;&lt;webctrl id='tbl_list_search' tag='TABLE' /&gt;&lt;webctrl aaname='&quot; &amp; currentColorRow(&quot;Color&quot;).ToString.Trim &amp;&quot;' tag='TD' /&gt;&quot;]" Guid="1830a9bf-34ad-410b-a84e-ac58b417b8b5" InformativeScreenshot="2f70b6c617d4a4b8c704f3dba989da69.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/CHeimZJ29U20ViqZXSri0Q" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,194" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="ByhxcEvNX0SUKL06yGYJ-Q" DesignTimeRectangle="1013, 807, 100, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&lt;webctrl name='_iframe-EmailBox' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' /&gt;" Guid="4d0e491d-d7ec-4816-bdf1-681b998b8f08" InformativeScreenshot="a36e5ce0d5c4007bc31662fbdc7cea7e.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/VAf-HhIucEWS30lborJgtA" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="486,123" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                                    <Assign sap:VirtualizedContainerService.HintSize="486,166" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Int32">[colorIndex]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Int32">[colorIndex+1]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEachRow.Body>
+                            </ui:ForEachRow>
+                            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each size" sap:VirtualizedContainerService.HintSize="522,906" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[out_Sizes]">
+                              <ui:ForEach.Body>
+                                <ActivityAction x:TypeArguments="x:String">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:String" Name="size" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,775" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(2)'" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_16" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var inputs=doc.querySelectorAll('#size_tbl input[id^=txtSizeName]');inputs[inputs.length-1].click();inputs[inputs.length-1].focus();})();" Version="V5">
+                                      <uix:NInjectJsScript.Target>
+                                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="c0biOjtpm0iwmNAZJvz36w" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="adf2ef0f-877f-4c3d-8675-8421b3c3d722" InformativeScreenshot="4a21b47e5076a6fa8b68d451d8e10656.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/1VPPS9uX5EuNWU6bgBWY2A" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NInjectJsScript.Target>
+                                    </uix:NInjectJsScript>
+                                    <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(2)'" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_17" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var inputs=doc.querySelectorAll('#size_tbl input[id^=txtSizeName]');var el=inputs[inputs.length-1];el.value='&quot; &amp; size &amp; &quot;';el.dispatchEvent(new Event('input',{bubbles:true}));el.focus();})();&quot;]" Version="V5">
+                                      <uix:NInjectJsScript.Target>
+                                        <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="c0biOjtpm0iwmNAZJvz36w" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="adf2ef0f-877f-4c3d-8675-8421b3c3d722" InformativeScreenshot="4a21b47e5076a6fa8b68d451d8e10656.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/1VPPS9uX5EuNWU6bgBWY2A" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NInjectJsScript.Target>
+                                    </uix:NInjectJsScript>
+                                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="down" KeyModifiers="None" SpecialKey="True">
+                                      <ui:SendHotkey.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f82b53a3-425f-44e2-ae1b-f13d29f267bf">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:SendHotkey.Target>
+                                    </ui:SendHotkey>
+                                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="416,158" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                      <ui:SendHotkey.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d0a695c8-4701-4a0e-b8b2-b752b585e9d0">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:SendHotkey.Target>
+                                    </ui:SendHotkey>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEach.Body>
+                            </ui:ForEach>
+                            <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(2)'" sap:VirtualizedContainerService.HintSize="522,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_18" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;var btns=doc.querySelectorAll('input[type=button]');for(var i=0;i&lt;btns.length;i++){if(btns[i].value.indexOf('Quantity')&gt;-1){btns[i].click();break;}}})();" Version="V5">
+                              <uix:NInjectJsScript.Target>
+                                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="c0biOjtpm0iwmNAZJvz36w" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="adf2ef0f-877f-4c3d-8675-8421b3c3d722" InformativeScreenshot="4a21b47e5076a6fa8b68d451d8e10656.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/1VPPS9uX5EuNWU6bgBWY2A" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NInjectJsScript.Target>
+                            </uix:NInjectJsScript>
+                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim sb As New System.Text.StringBuilder&#xA;sb.Append(&quot;(function(){&quot;)&#xA;sb.Append(&quot;var iframe=document.getElementById('page_container');&quot;)&#xA;sb.Append(&quot;var doc=iframe.contentDocument||iframe.contentWindow.document;&quot;)&#xA;&#xA;For i As Integer = 0 To in_dt.Rows.Count - 1&#xA;    Dim row As DataRow = in_dt.Rows(i)&#xA;    Dim colorIdx As Integer = i + 1&#xA;    Dim qty1 As String = row(&quot;Qty_36&quot;).ToString()&#xA;    Dim qty2 As String = row(&quot;Qty_38_40&quot;).ToString()&#xA;    Dim qty3 As String = row(&quot;Qty_42_44&quot;).ToString()&#xA;    Dim qty4 As String = row(&quot;Qty_46_48&quot;).ToString()&#xA;    sb.Append(&quot;(function(){var ids=['txt_colorSizeQty_&quot; &amp; colorIdx &amp; &quot;_1','txt_colorSizeQty_&quot; &amp; colorIdx &amp; &quot;_2','txt_colorSizeQty_&quot; &amp; colorIdx &amp; &quot;_3','txt_colorSizeQty_&quot; &amp; colorIdx &amp; &quot;_4'];&quot;)&#xA;    sb.Append(&quot;var vals=['&quot; &amp; qty1 &amp; &quot;','&quot; &amp; qty2 &amp; &quot;','&quot; &amp; qty3 &amp; &quot;','&quot; &amp; qty4 &amp; &quot;'];&quot;)&#xA; sb.Append(&quot;for(var j=0;j&lt;ids.length;j++){var el=doc.getElementById(ids[j]);if(el){el.focus();el.value=vals[j];el.blur();el.dispatchEvent(new Event('change',{bubbles:true}));}}})();&quot;)&#xA;Next&#xA;&#xA;sb.Append(&quot;})();&quot;)&#xA;out_jsScript = sb.ToString()&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="522,197" sap2010:WorkflowViewState.IdRef="InvokeCode_7">
+                              <ui:InvokeCode.Arguments>
+                                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt">[dt_CurrentPO]</InArgument>
+                                <OutArgument x:TypeArguments="x:String" x:Key="out_jsScript">[jsScript]</OutArgument>
+                              </ui:InvokeCode.Arguments>
+                            </ui:InvokeCode>
+                            <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(2)'" sap:VirtualizedContainerService.HintSize="522,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_15" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="[&quot;&quot; &amp; jsScript]" Version="V5">
+                              <uix:NInjectJsScript.Target>
+                                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="c0biOjtpm0iwmNAZJvz36w" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="adf2ef0f-877f-4c3d-8675-8421b3c3d722" InformativeScreenshot="4a21b47e5076a6fa8b68d451d8e10656.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/1VPPS9uX5EuNWU6bgBWY2A" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NInjectJsScript.Target>
+                            </uix:NInjectJsScript>
+                            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="522,123" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="522,357" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" ContinueOnError="True" DisplayName="Inject Js Script '$(function() {  hide …(2)'" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NInjectJsScript_21" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" ScriptCode="(function(){var iframe=document.getElementById('page_container');var doc=iframe.contentDocument||iframe.contentWindow.document;$(doc).find('#save2').click();})();" Version="V5">
+                                    <uix:NInjectJsScript.Target>
+                                      <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="c0biOjtpm0iwmNAZJvz36w" DesignTimeRectangle="8, 184, 1920, 845" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" Guid="adf2ef0f-877f-4c3d-8675-8421b3c3d722" InformativeScreenshot="4a21b47e5076a6fa8b68d451d8e10656.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/1VPPS9uX5EuNWU6bgBWY2A" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                    </uix:NInjectJsScript.Target>
+                                  </uix:NInjectJsScript>
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                            </ui:CommentOut>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,194" sap2010:WorkflowViewState.IdRef="NClick_32" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89229b09-0f5b-4f36-859f-5c7be4480498" Version="V5">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="182.160.125.188/erp_test/index.php" ContentHash="BKd0SS0RW0ynYykZsUt5gQ" DesignTimeRectangle="732, 944, 80, 21" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&#xA;&lt;webctrl id='page_container' tableRow='4' tag='IFRAME' /&gt;&#xA;&lt;webctrl id='save2' tag='INPUT' /&gt;" Guid="b97c5237-06f2-49fb-8f7a-9e6ae111504b" InformativeScreenshot="eb40764244ebf2ff06932d6f14b723e5.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/wn8WcXr8K0u6nGy1W09gMw" ScopeSelectorArgument="&lt;html app='firefox.exe' title='❏ Order Entry by Matrix' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <Assign sap:VirtualizedContainerService.HintSize="522,166" sap2010:WorkflowViewState.IdRef="Assign_12">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[poIndex]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[poIndex+1]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                    </ui:ForEach>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Firefox" ContentHash="8JfjnUNF8ESWt9qgS8OPbQ" IconBase64="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" InformativeScreenshot="0c021ff95c2eba6fc37ee70908977189.jpg" Reference="f8RoroUDQEWNlvWuMJF0SQ/UJI1nuiLp0WLK0LHzCjcxg" Selector="&lt;html app='firefox.exe' title='Logic ERP Solution' /&gt;" Url="http://182.160.125.188:8080/erp_test/login.php#one" Version="V3">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
